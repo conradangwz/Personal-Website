@@ -1,3 +1,4 @@
+/* Base Styling */
 :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
@@ -28,4 +29,35 @@ p {
 a {
     color: var(--primary-color);
     text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Homepage */
+
+#homepage {
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+}
+
+#homepage h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
